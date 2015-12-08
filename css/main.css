@@ -1,1 +1,53 @@
 /* write your css here */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+nav {
+    top: 0;  
+    opacity: 0.7;
+  
+    /*This takes the entire nav bar and fixes its position relative to the screen*/
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 0.5em;
+    
+    
+    
+}
+
+ul {
+    /* This gets rid of the padding and margins on top and on left side */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    /*The line height property sets the vertical and horizontal spacing inside li boxes equal*/
+    line-height: 1;
+    list-style-type: none;
+    float: left;
+    padding: 0.5em;
+    border: 1px solid white;
+    margin: 0.5em;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+section {
+    margin-top: 80px;
+}
